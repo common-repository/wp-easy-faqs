@@ -1,0 +1,187 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    display: inline-block;
+}
+.clearfix {
+    display: block;
+}
+h3.faq-question-plist {
+    padding: 0;
+    margin:  0px !important;
+    display: inline-block;
+    float: left;
+    line-height: inherit;
+}
+.faq-icon-list {
+    float: right;
+}
+.faq-quest-head{
+   border-bottom: 1px solid #ccc;
+    margin: 20px 0 5px;
+    padding: 0 0 5px;
+    display: table;
+    width: 100%;
+}
+.faq-icon-list span.dashicons.dashicons-admin-links, .faq-icon-list span.dashicons.dashicons-edit {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.faq-answer-plist p{
+    margin-top: 15px;
+}
+.faq-quest-content {
+    margin-bottom: 15px;
+}
+.faq-icon-list  a.faq-admin-link, .faq-icon-list a.faq-edit-link {
+    text-decoration: none;
+    border-bottom: none;
+    box-shadow: none;
+}
+.wp-easy-faq-accordion-wrapper a.faq-admin-link, .wp-easy-faq-accordion-wrapper a.faq-edit-link {
+    box-shadow: none;
+    text-decoration: none;
+    visibility: hidden;
+    position: absolute;
+    z-index: 99;
+    border: none;
+    padding-right: 13px;
+
+}
+.wp-easy-faq-accordion-wrapper a.faq-admin-link{
+    margin-left: 3%;
+    right: 9%;
+    margin-top: 13px;
+}
+.wp-easy-faq-accordion-wrapper a.faq-edit-link{
+    margin-left: 2%;
+    right: 6%;
+    margin-top: 13px;
+}
+
+.faq-accordion-inner:hover a.faq-admin-link,
+.faq-accordion-inner:hover a.faq-edit-link {
+  visibility: visible;
+}
+.faq-accordion-inner {
+    position: relative;
+}
+.faq-quest-content .faq-icon-list {
+    visibility: hidden;
+}
+.faq-quest-content:hover .faq-icon-list {
+  visibility: visible;
+}
+
+
+/*Media Queries*/
+@media (min-width: 1200px) and (max-width: 1920px) {
+
+        }
+@media (min-width: 992px) and (max-width: 1199px) {
+    .wp-easy-faq-accordion-wrapper a.faq-admin-link {
+   right: 7%;
+   margin-top: 11px;
+    
+}
+.wp-easy-faq-accordion-wrapper a.faq-edit-link {
+    right: 4%;
+    margin-top: 11px;
+}
+        }
+@media (min-width: 768px) and (max-width: 991px) {
+.wp-easy-faq-accordion-wrapper a.faq-admin-link {
+   right: 9%;
+   margin-top: 11px;
+    
+}
+.wp-easy-faq-accordion-wrapper a.faq-edit-link {
+    right: 5%;
+    margin-top: 11px;
+}
+        }
+@media (max-width: 767px) {
+.faq-quest-content .faq-icon-list{
+    visibility: visible;
+}
+}
+
+
+@media (max-width: 640px) and (orientation: landscape) { 
+.wp-easy-faq-accordion-wrapper a.faq-admin-link, .wp-easy-faq-accordion-wrapper a.faq-edit-link {
+   
+    visibility: visible;
+
+}
+.wp-easy-faq-accordion-wrapper a.faq-admin-link {
+   right: 10%;
+   margin-top: 11px;
+    
+}
+.wp-easy-faq-accordion-wrapper a.faq-edit-link {
+    right: 6%;
+    margin-top: 11px;
+}
+button.accordion {
+    padding: 12px 68px 12px 18px !important;
+}
+ }
+@media only screen and (max-width : 640px) {
+.wp-easy-faq-accordion-wrapper a.faq-admin-link, .wp-easy-faq-accordion-wrapper a.faq-edit-link {
+   
+    visibility: visible;
+
+}
+.wp-easy-faq-accordion-wrapper a.faq-admin-link {
+   right: 12%;
+   margin-top: 11px;
+    
+}
+.wp-easy-faq-accordion-wrapper a.faq-edit-link {
+    right: 6%;
+    margin-top: 11px;
+}
+.faq-quest-content .faq-icon-list{
+    visibility: visible;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (max-width : 320px) {
+          /* Styles */
+    .wp-easy-faq-accordion-wrapper a.faq-admin-link, .wp-easy-faq-accordion-wrapper a.faq-edit-link {
+   
+    visibility: visible;
+
+}
+      }
+
+
+
+/**
+ * Padding for lists 
+ * 
+ */
+
+.panel ol, .panel ul , .faq-answer-plist ol, .faq-answer-plist ul {
+    padding-left: 25px;
+}
+
+/**
+ * Remove Uppercase for some button elements
+ * 
+ */
+
+.faq-accordion-inner button {
+    text-transform: none;
+}
